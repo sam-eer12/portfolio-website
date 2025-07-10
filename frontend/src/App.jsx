@@ -11,9 +11,9 @@ const SettingsIcon = () => <img src="/projects.png" alt="Projects" className="w-
 
 const items = [
   { icon: <HomeIcon />, label: 'Home', onClick: () => alert('Home!') },
-  { icon: <ArchiveIcon />, label: 'Resume', onClick: () => alert('Archive!') },
-  { icon: <ProfileIcon />, label: 'Contact', onClick: () => alert('Profile!') },
-  { icon: <SettingsIcon />, label: 'Projects', onClick: () => alert('Settings!') },
+  { icon: <ArchiveIcon />, label: 'Resume', onClick: () => alert('Resume!') },
+  { icon: <ProfileIcon />, label: 'Contact', onClick: () => alert('Contact!') },
+  { icon: <SettingsIcon />, label: 'Projects', onClick: () => alert('Projects!') },
 ];
 const App = () => {
   return (
