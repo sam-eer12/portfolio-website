@@ -32,8 +32,8 @@ const App = () => {
       <Dock 
         items={items}
         panelHeight={78}
-        baseItemSize={60}
-        magnification={70}
+        baseItemSize={55}
+        magnification={65}
       />
     </div>
   );

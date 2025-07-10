@@ -50,6 +50,7 @@ function DockItem({
       style={{
         width: size,
         height: size,
+        backgroundColor: 'transparent',
       }}
       onHoverStart={() => isHovered.set(1)}
       onHoverEnd={() => isHovered.set(0)}
