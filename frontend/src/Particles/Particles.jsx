@@ -99,7 +99,7 @@ const Particles = ({
     const gl = renderer.gl;
     gl.canvas.style.width = '100vh';
     gl.canvas.style.height = '100vh';
-    // gl.canvas.style.display = 'block';
+    //gl.canvas.style.display = 'block';
     container.appendChild(gl.canvas);
     gl.clearColor(0, 0, 0, 0);
 
