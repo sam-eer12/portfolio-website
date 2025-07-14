@@ -1,6 +1,9 @@
 import React from 'react';
-import Particles from './Particles/Particles';
-import Dock from './Dock/Dock';
+import Particles from './animations/Particles/Particles';
+import ReactDOM from "react-dom/client";
+import { Route, RouterProvider, createRoutesFromElements } from "react-router";
+import { createBrowserRouter } from "react-router-dom";
+import Dock from './animations/Dock/Dock';
 import './App.css';
 
 
