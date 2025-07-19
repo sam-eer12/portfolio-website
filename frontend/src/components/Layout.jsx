@@ -37,7 +37,7 @@ const Layout = () => {
   return (
     <div className="bg-gradient-to-br from-purple-600 to-gray-900 h-screen w-screen relative overflow-hidden">
       {/* Particles background */}
-      <div className="absolute inset-0 z-10">
+      <div className="absolute inset-0 z-20">
         <Particles 
           style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
           particleColors={['#ffffff', '#ffffff']}
