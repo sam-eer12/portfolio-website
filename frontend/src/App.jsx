@@ -4,7 +4,7 @@ import ReactDOM from "react-dom/client";
 import { Route, RouterProvider, createRoutesFromElements } from "react-router";
 import { createBrowserRouter } from "react-router-dom";
 import Dock from './animations/Dock/Dock';
-import Spline from '@splinetool/react-spline';
+
 import './App.css';
 
 
@@ -22,7 +22,7 @@ const items = [
 const App = () => {
   return (
     <div className="bg-gradient-to-br from-purple-600 to-gray-900 h-screen w-screen relative overflow-hidden">
-      <Spline scene="https://prod.spline.design/YN7R5TwTku3XC8Up/scene.splinecode" />
+      
       <Particles 
         style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
         particleColors={['#ffffff', '#ffffff']}
