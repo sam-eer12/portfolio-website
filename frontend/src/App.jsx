@@ -5,7 +5,7 @@ import { Route, RouterProvider, createRoutesFromElements } from "react-router";
 import { createBrowserRouter } from "react-router-dom";
 import Dock from './animations/Dock/Dock';
 
-import './App.css';
+import './App.css' ;
 
 
 const HomeIcon = () => <img src="/home.png" alt="Home" className="w-6 h-6" />;
