@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Shuffle from './animations/Shuffle/Shuffle'
 import LaserFlow from './animations/LaserFlow/LaserFlow'
+import TiltedCard from './animations/TitledCard/TitledCard'
 
 
 function App() {
@@ -71,18 +72,48 @@ function App() {
                 Get in touch with me for collaboration opportunities.
               </p>
             </section>
+            
+            
+              
+  
           </div>
         </div>
       </div>
       
       {/* Right side - Fixed LaserFlow component (40%) */}
-      <div id='laser-flow' className='w-2/5 h-[1200px] fixed right-0 top-0 z-20'>
-        <LaserFlow 
-          className="w-full h-full"
-          horizontalBeamOffset={0.1}
-          verticalBeamOffset={0.0}
-          color="#FF79C6"
-        />
+      <div id='laser-flow' className='w-2/5 fixed right-0 top-10  z-20 flex flex-col h-screen'>
+        {/* LaserFlow takes up 60% of the right side */}
+        <div id='tt' className='h-3/5 w-full'>
+          <LaserFlow 
+            className="w-full h-full"
+            horizontalBeamOffset={0.1}
+            verticalBeamOffset={0.0}
+            color="#FF79C6"
+          />
+        </div>
+        
+        {/* TiltedCard positioned below LaserFlow */}
+        <div id='tilted-card' className='h-2/5 w-full border-[var(--border-color)] flex  justify-center p-8'>
+          <TiltedCard
+                imageSrc="/unnamed.png"
+                altText="Student at NSUT"
+                captionText="Student Developer"
+                containerHeight="100px"
+                containerWidth="100px"
+                imageHeight="100px"
+                imageWidth="100px"
+                rotateAmplitude={12}
+                scaleOnHover={1.2}
+                showMobileWarning={false}
+                showTooltip={true}
+                displayOverlayContent={true}
+                overlayContent={
+                  <p className="tilted-card-demo-text text-sm">
+                    Sameer Gupta
+                  </p>
+                }
+              />
+        </div>
       </div>
     </div>
   )
