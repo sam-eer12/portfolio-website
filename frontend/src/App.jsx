@@ -1,47 +1,78 @@
-import React from 'react';
-import Particles from './animations/Particles/Particles';
-import ReactDOM from "react-dom/client";
-import { Route, RouterProvider, createRoutesFromElements } from "react-router";
-import { createBrowserRouter } from "react-router-dom";
-import Dock from './animations/Dock/Dock';
-
-import './App.css' ;
+import { useState, useRef } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import Shuffle from './animations/Shuffle/Shuffle'
+import LaserFlow from './animations/LaserFlow/LaserFlow'
 
 
-const HomeIcon = () => <img src="/home.png" alt="Home" className="w-6 h-6" />;
-const ArchiveIcon = () => <img src="/resume.png" alt="Resume" className="w-6 h-6" />;
-const ProfileIcon = () => <img src="/about.png" alt="Contact" className="w-6 h-6" />;
-const SettingsIcon = () => <img src="/projects.png" alt="Projects" className="w-6 h-6" />;
+function App() {
 
-const items = [
-  { icon: <HomeIcon />, label: 'Home', onClick: () => alert('Home!') },
-  { icon: <ArchiveIcon />, label: 'Resume', onClick: () => alert('Resume!') },
-  { icon: <ProfileIcon />, label: 'Contact', onClick: () => alert('Contact!') },
-  { icon: <SettingsIcon />, label: 'Projects', onClick: () => alert('Projects!') },
-];
-const App = () => {
   return (
-    <div className="bg-gradient-to-br from-purple-600 to-gray-900 h-screen w-screen relative overflow-hidden">
+    <div className='bg-black text-white h-screen '>
+      <div className='w-3/5 h-full overflow-y-auto border-r-[--border-color] mr-1 overflow-x-hidden relative z-10'>
+        <div className='flex flex-col items-center justify-center min-h-full p-8'>
+          <Shuffle
+            text="PORTFOLIO WEBSITE"
+            shuffleDirection="right"
+            duration={0.35}
+            animationMode="evenodd"
+            shuffleTimes={1}
+            ease="power3.out"
+            stagger={0.03}
+            threshold={0.1}
+            triggerOnce={true}
+            triggerOnHover={true}
+            respectReducedMotion={true}
+          />
+          
+          {/* Add more content here that will be scrollable */}
+          <div className='mt-16 space-y-8'>
+            <section className='text-center'>
+              <h2 className='text-4xl font-bold mb-4'>About</h2>
+              <p className='text-lg text-gray-300 max-w-lg'>
+                Welcome to my portfolio website. This is the scrollable content area where you can add your projects, about section, contact information, and more.
+              </p>
+            </section>
+            
+            <section className='text-center'>
+              <h2 className='text-4xl font-bold mb-4'>Projects</h2>
+              <div className='space-y-4'>
+                <div className='p-6 border border-gray-600 rounded-lg'>
+                  <h3 className='text-xl font-semibold mb-2'>Project 1</h3>
+                  <p className='text-gray-300'>Description of your first project...</p>
+                </div>
+                <div className='p-6 border border-gray-600 rounded-lg'>
+                  <h3 className='text-xl font-semibold mb-2'>Project 2</h3>
+                  <p className='text-gray-300'>Description of your second project...</p>
+                </div>
+                <div className='p-6 border border-gray-600 rounded-lg'>
+                  <h3 className='text-xl font-semibold mb-2'>Project 3</h3>
+                  <p className='text-gray-300'>Description of your third project...</p>
+                </div>
+              </div>
+            </section>
+            
+            <section className='text-center'>
+              <h2 className='text-4xl font-bold mb-4'>Contact</h2>
+              <p className='text-lg text-gray-300'>
+                Get in touch with me for collaboration opportunities.
+              </p>
+            </section>
+          </div>
+        </div>
+      </div>
       
-      <Particles 
-        style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-        particleColors={['#ffffff', '#ffffff']}
-        particleCount={300}
-        particleSpread={10}
-        speed={0.1}
-        particleBaseSize={100}
-        moveParticlesOnHover={true}
-        alphaParticles={false}
-        disableRotation={false}
-      />
-      <Dock 
-        items={items}
-        panelHeight={78}
-        baseItemSize={55}
-        magnification={65}
-      />
+      {/* Right side - Fixed LaserFlow component (40%) */}
+      <div id='laser-flow' className='w-2/5 h-[1200px] fixed right-0 top-0 z-20'>
+        <LaserFlow 
+          className="w-full h-full"
+          horizontalBeamOffset={0.1}
+          verticalBeamOffset={0.0}
+          color="#FF79C6"
+        />
+      </div>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
