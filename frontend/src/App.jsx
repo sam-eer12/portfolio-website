@@ -10,14 +10,17 @@ function App() {
   return (
     <div className='bg-black text-white h-screen' style={{'--border-color': '#FF79C6'}}>
       <div className='w-3/5 h-full overflow-y-auto mr-1 overflow-x-hidden relative z-10'>
-        <div className='flex flex-col items-center justify-center min-h-full p-8'>
+        <div className='flex  flex-col inset-shadow-[var(--border-color)] items-center justify-center min-h-full p-8'>
           <div 
             style={{
               borderRight: '2px solid var(--border-color)', 
               borderBottom: '2px solid var(--border-color)',
+              borderImage: 'linear-gradient(20deg, var(--border-color), white) 1',
               paddingRight: '8px',
-              paddingBottom: '8px'
+              paddingBottom: '7px'
             }}
+
+            className='shadow-xl/40 shadow-[color:var(--border-color)] radius-[8px]'
           >
             <Shuffle
               text="PORTFOLIO WEBSITE"
