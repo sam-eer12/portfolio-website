@@ -8,22 +8,32 @@ import LaserFlow from './animations/LaserFlow/LaserFlow'
 function App() {
 
   return (
-    <div className='bg-black text-white h-screen '>
-      <div className='w-3/5 h-full overflow-y-auto border-r-[--border-color] mr-1 overflow-x-hidden relative z-10'>
+    <div className='bg-black text-white h-screen' style={{'--border-color': '#FF79C6'}}>
+      <div className='w-3/5 h-full overflow-y-auto mr-1 overflow-x-hidden relative z-10'>
         <div className='flex flex-col items-center justify-center min-h-full p-8'>
-          <Shuffle
-            text="PORTFOLIO WEBSITE"
-            shuffleDirection="right"
-            duration={0.35}
-            animationMode="evenodd"
-            shuffleTimes={1}
-            ease="power3.out"
-            stagger={0.03}
-            threshold={0.1}
-            triggerOnce={true}
-            triggerOnHover={true}
-            respectReducedMotion={true}
-          />
+          <div 
+            style={{
+              borderRight: '2px solid var(--border-color)', 
+              borderBottom: '2px solid var(--border-color)',
+              paddingRight: '8px',
+              paddingBottom: '8px'
+            }}
+          >
+            <Shuffle
+              text="PORTFOLIO WEBSITE"
+              shuffleDirection="right"
+              duration={0.35}
+              animationMode="evenodd"
+              shuffleTimes={1}
+              ease="power3.out"
+              stagger={0.03}
+              threshold={0.1}
+              triggerOnce={true}
+              triggerOnHover={true}
+              respectReducedMotion={true}
+            /> 
+          </div>
+          
           
           {/* Add more content here that will be scrollable */}
           <div className='mt-16 space-y-8'>
