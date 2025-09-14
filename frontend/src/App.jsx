@@ -4,13 +4,14 @@ import viteLogo from '/vite.svg'
 import Shuffle from './animations/Shuffle/Shuffle'
 import LaserFlow from './animations/LaserFlow/LaserFlow'
 import TiltedCard from './animations/TitledCard/TitledCard'
+import ProfileLink from './components/ProfileLink'
 
 
 function App() {
 
   return (
     <div className='bg-black text-white h-screen' style={{'--border-color': '#FF79C6'}}>
-      <div className='w-3/5 h-full overflow-y-auto mr-1 overflow-x-hidden relative z-10'>
+      <div className='w-7/10 h-full overflow-y-auto mr-1 overflow-x-hidden relative z-10'>
         <div style={{boxShadow: 'inset 5px 5px 18px var(--bg-color)'}} className='flex  flex-col inset-shadow-[var(--border-color)] items-center justify-center min-h-full p-8'>
           <div 
             style={{
@@ -81,7 +82,7 @@ function App() {
       </div>
       
       {/* Right side - Fixed LaserFlow component (40%) */}
-      <div id='laser-flow' className='w-2/5 fixed right-0 top-10  z-20 flex flex-col h-screen'>
+      <div id='laser-flow' className='w-3/10 fixed right-0 top-10  z-20 flex flex-col h-screen'>
         {/* LaserFlow takes up 60% of the right side */}
         <div id='tt' className='h-3/5 w-full'>
           <LaserFlow 
@@ -93,7 +94,7 @@ function App() {
         </div>
         
         {/* TiltedCard positioned below LaserFlow */}
-        <div id='tilted-card' className='h-2/5 w-full border-[var(--border-color)] flex  justify-center p-8'>
+        <div id='tilted-card' className='h-2/5 w-full border-[var(--border-color)] flex flex-col justify-center items-center p-8'>
           <TiltedCard
                 imageSrc="/unnamed.png"
                 altText="Student at NSUT"
@@ -113,6 +114,7 @@ function App() {
                   </p>
                 }
               />
+              <ProfileLink  />
         </div>
       </div>
     </div>
