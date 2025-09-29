@@ -3,9 +3,9 @@ import React from 'react'
 const About = () => {
   return (
     <div>
-      <h2 className='text-4xl font-bold mt-4 mb-4'>About Me</h2>
+      
       <p className='text-lg text-gray-300 max-w-xl mx-auto mb-4'>
-            I am Sameer Gupta, a passionate developer and designer. This portfolio showcases my projects, skills, and experiences. Feel free to explore and connect with me!
+            I am <a className='font-bold'>Sameer Gupta</a>, a passionate developer and designer. This portfolio showcases my projects, skills, and experiences. Feel free to explore and connect with me!
             Currently, Pursuing B.Tech in Insturmentation and Control Engineering form <a href="https://www.nsut.ac.in/" className='text-[var(--border-color)]'>NSUT</a> Delhi, Batch of 2028.
         </p>
       <p className='text-lg text-gray-300'>
