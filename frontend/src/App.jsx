@@ -6,6 +6,8 @@ import LaserFlow from './animations/LaserFlow/LaserFlow'
 import TiltedCard from './animations/TitledCard/TitledCard'
 import ProfileLink from './components/ProfileLink'
 import ClickSpark from './animations/ClickSpark/ClickSpark'
+import Intro from './components/Intro'
+import About from './components/About'
 
 
 function App() {
@@ -50,10 +52,9 @@ function App() {
             {/* Add more content here that will be scrollable */}
             <div className='mt-16 space-y-8'>
               <section className='text-center'>
-                <h2 className='text-4xl font-bold mb-4'>About</h2>
-                <p className='text-lg text-gray-300 max-w-lg'>
-                  Welcome to my portfolio website. This is the scrollable content area where you can add your projects, about section, contact information, and more.
-                </p>
+                <Intro />
+                <About />
+               
               </section>
               
               <section className='text-center'>
