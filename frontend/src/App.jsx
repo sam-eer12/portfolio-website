@@ -23,7 +23,7 @@ function App() {
       ><div className='bg-black text-white h-screen' style={{'--border-color': '#FF79C6'}}>
       
         <div className='w-7/10 h-full overflow-y-auto mr-1 overflow-x-hidden relative z-10'>
-          <div style={{boxShadow: 'inset 5px 5px 18px var(--bg-color)'}} className='flex  flex-col inset-shadow-[var(--border-color)] items-center justify-center min-h-full p-8'>
+          <div style={{boxShadow: 'inset 5px 5px 18px var(--bg-color)', z:'30'}} className='flex  flex-col inset-shadow-[var(--border-color)] items-center justify-center min-h-full p-8'>
             <div 
               style={{
                 borderRight: '2px solid var(--border-color)', 
@@ -52,7 +52,7 @@ function App() {
             
             {/* Add more content here that will be scrollable */}
             <div className='mt-16 space-y-8'>
-              <section className='text-center'>
+              <section className='text-center  p-2'>
                 <Intro />
                 <About />
                 <Stack />

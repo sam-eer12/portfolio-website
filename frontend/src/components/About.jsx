@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className='px-4 py-8 max-w-3xl mx-auto'>
+    <div className='px-4  py-8 max-w-3xl mx-auto'>
       
       <p className='text-lg text-gray-300 max-w-xl mx-auto mb-4'>
             I am <a className='font-bold'>Sameer Gupta</a>, a passionate developer and designer. This portfolio showcases my projects, skills, and experiences. Feel free to explore and connect with me!
