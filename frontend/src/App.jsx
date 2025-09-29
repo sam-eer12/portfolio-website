@@ -8,6 +8,7 @@ import ProfileLink from './components/ProfileLink'
 import ClickSpark from './animations/ClickSpark/ClickSpark'
 import Intro from './components/Intro'
 import About from './components/About'
+import Stack from './components/Stack'
 
 
 function App() {
@@ -54,6 +55,7 @@ function App() {
               <section className='text-center'>
                 <Intro />
                 <About />
+                <Stack />
                
               </section>
               
