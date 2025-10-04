@@ -35,8 +35,16 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import microchip from './microchip.png';
+import image_text from './image-text.png';
+import ui_ux from './ui-ux.png';
+import coding from './coding.png';
 
 export const assets = {
+    coding,
+    ui_ux,
+    image_text,
+    microchip,
     user_image,
     code_icon,
     code_icon_dark,
@@ -104,16 +112,16 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: 'https://github.com/sam-eer12' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: 'https://github.com/sam-eer12' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: 'https://github.com/sam-eer12' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: 'https://github.com/sam-eer12' },
+    { icon: assets.coding, title: 'Web Development', description: 'Web development is the process of building, programming, and maintaining websites and web applications.', link: 'https://sih-project-uimw.vercel.app/' },
+    { icon: assets.image_text, title: 'Object Detection', description: 'Object detection is a computer vision task that involves identifying and locating objects within an image or video.', link: 'https://github.com/sam-eer12/object-detection-model-yolov8' },
+    { icon: assets.ui_ux, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience. It involves understanding user needs and designing interfaces that are easy to use and visually appealing.', link: 'https://beginner-webdev-project.vercel.app/' },
+    { icon: assets.microchip, title: 'AI/ML', description: 'AI/ML involves using algorithms and statistical models to enable machines to improve their performance on tasks through experience.', link: 'https://github.com/sam-eer12/VigilAI-survillance-project' },
 ]
 
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript, React Js, Next Js, Python, Flask, C++, MERN, MySQL, Tensorflow, PyTorch' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Instrumentation and Control engineering, NSUT CGPA:7.55' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects in Web development and AI/ML' }
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 12 projects in Web development and AI/ML' }
 ];
 
 export const toolsData = [

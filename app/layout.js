@@ -14,11 +14,17 @@ const ovo = Ovo({
 export const metadata = {
   title: "Portfolio - Sameer Gupta",
   description: "Portfolio website of Sameer Gupta - Instrumentation and Control Engineer NSUT 2028 Batch",
+  icons: {
+    icon: '/favicon.png',
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <link rel="icon" href="/favicon.png" sizes="any" />
+      </head>
       <body
         className={`${outfit.className} ${ovo.variable} antialiased leading-8 overflow-x-hidden`}
       >
