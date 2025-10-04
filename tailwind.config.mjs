@@ -8,9 +8,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        ovo: ['var(--font-Ovo)'],
-        outfit: ['var(--font-Outfit)'],
+        ovo: ["var(--font-ovo)", ...fontFamily.serif],
+        outfit: ['var(--font-outfit)'],
       },
+      boxShadow:{
+        'black': '4px 4px 0 #000',
+        'white': '4px 4px 0 #fff',
+      }
     },
   },
   plugins: [],

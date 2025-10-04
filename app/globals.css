@@ -1,9 +1,15 @@
 @import "tailwindcss";
 
-
+:root{
+  --font-outfit: 'Outfit', sans-serif;
+  --font-ovo: 'Ovo', serif;
+  --lightHover: #fcf4ff;
+  --darkHover: #2e004a;
+  --darkTheme: #11001F;
+}
 
 *{
-  font-family: Outfit;
+  font-family: var(--font-outfit), var(--font-ovo);
 }
 
 ::-webkit-scrollbar{
