@@ -16,6 +16,8 @@ export const metadata = {
   description: "Portfolio website of Sameer Gupta - Instrumentation and Control Engineer NSUT 2028 Batch",
   icons: {
     icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
   },
 };
 
@@ -23,7 +25,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <link rel="icon" href="/favicon.png" sizes="any" />
+        <link rel="icon" href="./favicon.png" sizes="any" />
+        <link rel="apple-touch-icon" href="./favicon.png" />
       </head>
       <body
         className={`${outfit.className} ${ovo.variable} antialiased leading-8 overflow-x-hidden`}
