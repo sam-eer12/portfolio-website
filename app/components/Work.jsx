@@ -14,7 +14,7 @@ const Work = () => {
             <div key={index} style={{backgroundImage: `url(${project.bgImage})`}} className='w-full relative h-60 sm:h-72 md:h-80 lg:h-96 mb-10 bg-cover bg-center rounded-xl border border-gray-400 p-6 flex flex-col justify-end hover:shadow-[4px_4px_0_#000] hover:-translate-y-1 duration-500 cursor-pointer'>
                 <div className='absolute bottom-5 border border-gray-500 backdrop-blur-lg rounded-lg hover:-translate-y-1 duration-500 py-3 px-5 flex items-center justify-center'>
                     <div>
-                    <h3 className='text-2xl font-semibold font-ovo mb-2'>{project.title}</h3>
+                    <h3 className='text-xl font-semibold font-ovo mb-2'>{project.title}</h3>
                     <p className='max-w-2xl text-sm text-gray-600'>{project.description}</p>
                     <a href={project.link} className='text-blue-500 hover:underline'>View Project</a>
                     </div>

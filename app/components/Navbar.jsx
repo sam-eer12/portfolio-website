@@ -41,7 +41,7 @@ const Navbar = () => {
         </ul>
         <div className='flex items-center gap-4'>
           <button className='cursor-pointer'>
-            <Image src={assets.moon_icon} alt="Dark Mode" className='w-6 md:w-7 lg:w-8'/>
+            {/* <Image src={assets.moon_icon} alt="Dark Mode" className='w-6 md:w-7 lg:w-8'/> */}
           </button>
           <a className='hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4' href="#contact">Contact <Image src={assets.arrow_icon} alt='' className='w-3'/></a>
 
