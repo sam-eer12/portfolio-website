@@ -2,13 +2,13 @@ import { Outfit,Ovo } from "next/font/google";
 import "./globals.css";
 
 const outfit = Outfit({
-  
+  variable: '--font-Outfit',
   subsets: ["latin"], weight:["400","500","600","700"],
 });
 
 const ovo = Ovo({
-
   subsets: ["latin"], weight:["400"],
+  variable: '--font-Ovo',
 });
 
 export const metadata = {
