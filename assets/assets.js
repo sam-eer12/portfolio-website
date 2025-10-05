@@ -39,8 +39,10 @@ import microchip from './microchip.png';
 import image_text from './image-text.png';
 import ui_ux from './ui-ux.png';
 import coding from './coding.png';
+import docker from './docker.png';
 
 export const assets = {
+    docker,
     coding,
     ui_ux,
     image_text,
@@ -129,5 +131,5 @@ export const infoList = [
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git, assets.docker
 ];
