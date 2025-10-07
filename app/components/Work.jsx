@@ -19,7 +19,7 @@ const Work = () => {
                     <a href={project.link} className='text-blue-500 hover:underline text-xs sm:text-sm'>View Project</a>
                     </div>
                     <div className={'border rounded-full shadow-[2px_2px_0_#000] hover:bg-lime-500 duration-200 border-black w-7 sm:w-8 md:w-9 h-7 sm:h-8 md:h-9 flex items-center justify-center flex-shrink-0 '+ (project.black ? ' bg-white backdrop-blur-xl' : ' ')}>
-                        <a target='_blank' href={project.link}><Image src={assets.send_icon} alt='' className='w-3 sm:w-4 md:w-6'/></a>
+                        <a target='_blank' href={project.link}><Image draggable="false" src={assets.send_icon} alt='' className='w-3 sm:w-4 md:w-6'/></a>
                     </div>
                 </div>
             </div>

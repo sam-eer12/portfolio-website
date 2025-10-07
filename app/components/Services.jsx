@@ -11,10 +11,10 @@ const Services = () => {
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 my-10'>
         {serviceData.map(({icon,title,description,link},index)=>(
             <div key={index} className='border border-gray-400 rounded-lg px-4 sm:px-6 lg:px-8 py-8 sm:py-10 lg:py-12 hover:bg-[var(--lightHover)] hover:-translate-y-1 hover:shadow-[4px_4px_0_#000] duration-500 cursor-pointer'>
-                <Image src={icon} alt={title} className='w-12 '/>
+                <Image draggable="false" src={icon} alt={title} className='w-12 '/>
                 <h3 className='text-center my-4 text-gray-700 text-lg font-ovo'>{title}</h3>
                 <p className='text-center text-sm leading-5 text-gray-600'>{description}</p>
-                <a href={link} target='_blank' className='text-blue-500 flex items-center gap-2 text-sm mt-5 hover:underline'>Learn More <Image src={assets.right_arrow} alt='' className='w-5'/> </a>
+                <a href={link} target='_blank' className='text-blue-500 flex items-center gap-2 text-sm mt-5 hover:underline'>Learn More <Image draggable="false" src={assets.right_arrow} alt='' className='w-5'/> </a>
             </div>
         ))}
 

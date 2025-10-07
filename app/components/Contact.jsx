@@ -39,7 +39,7 @@ const Contact = () => {
         <div>
             <textarea rows="6" placeholder='Enter Your Message' required className='w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6' name='message'></textarea>
         </div>
-        <button type='submit' className='bg-blue-500 w-max flex items-center justify-center mx-auto hover:bg-blue-900 duration-400 text-white py-3 px-8 rounded-full'>Submit  <Image src={assets.right_arrow_white} alt='' className='w-5 pl-[4px]'/></button>
+        <button type='submit' className='bg-blue-500 w-max flex items-center justify-center mx-auto hover:bg-blue-900 duration-400 text-white py-3 px-8 rounded-full'>Submit  <Image draggable="false" src={assets.right_arrow_white} alt='' className='w-5 pl-[4px]'/></button>
         <p>{result}</p>
       </form>
     </div>
