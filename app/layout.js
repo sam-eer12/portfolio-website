@@ -25,6 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        <meta name="google-site-verification" content="z89_y2w8b2a0dGcpC0S3hy4ObEPHA1A09Ts5T3aHZEU" />
         <link rel="icon" href="./favicon.png" sizes="any" />
         <link rel="apple-touch-icon" href="./favicon.png" />
       </head>
