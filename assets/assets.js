@@ -119,7 +119,7 @@ export const workData = [
 
 export const serviceData = [
     { icon: assets.coding, title: 'Web Development', description: 'Web development is the process of building, programming, and maintaining websites and web applications.', link: 'https://amethyst-wave.vercel.app/' },
-    { icon: assets.image_text, title: 'Object Detection', description: 'Object detection is a computer vision task that involves identifying and locating objects within an image or video.', link: 'https://github.com/sam-eer12/object-detection-model-yolov8' },
+    { icon: assets.image_text, title: 'Data Analysis', description: 'Data analysis involves inspecting, cleansing, and modeling data with the goal of discovering useful information, informing conclusions, and supporting decision-making.', link: 'https://github.com/sam-eer12/object-detection-model-yolov8' },
     { icon: assets.ui_ux, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience. It involves understanding user needs and designing interfaces that are easy to use and visually appealing.', link: 'https://beginner-webdev-project.vercel.app/' },
     { icon: assets.microchip, title: 'AI/ML', description: 'AI/ML involves using algorithms and statistical models to enable machines to improve their performance on tasks through experience.', link: 'https://sih-project-uimw.vercel.app/' },
 ]
