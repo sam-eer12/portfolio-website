@@ -17,7 +17,6 @@ const Services = () => {
                 <a href={link} target='_blank' className='text-blue-500 flex items-center gap-2 text-sm mt-5 hover:underline'>Learn More <Image draggable="false" src={assets.right_arrow} alt='' className='w-5'/> </a>
             </div>
         ))}
-
       </div>
     </div>
   )
