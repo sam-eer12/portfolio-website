@@ -115,6 +115,13 @@ export const workData = [
         link: 'https://amethyst-wave.vercel.app/',
         black:false,
     },
+    {
+        title: 'Amicus AI',
+        description: 'AI-powered legal assistant providing case analysis, fraud detection and document generation.',
+        bgImage: '/work-5.png',
+        link: 'https://amicusai.vercel.app/',
+        black:false,
+    },
 ]
 
 export const serviceData = [
