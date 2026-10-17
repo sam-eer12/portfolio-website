@@ -122,6 +122,20 @@ export const workData = [
         link: 'https://amicusai.vercel.app/',
         black:false,
     },
+    {
+        title: 'Project SLM',
+        description: 'ChadGPT, a 250M-parameter language model trained from scratch and instruction-tuned.',
+        bgImage: '/work-6.png',
+        link: 'https://huggingface.co/sam-eer12/chadGPT',
+        black:true,
+    },
+    {
+        title: 'AeroRoute',
+        description: 'Route planning that compares travel time and estimated air pollution within your time budget.',
+        bgImage: '/work-7.png',
+        link: 'https://aeroroute.d1qrrcsa5p4lz3.amplifyapp.com/',
+        black:true,
+    },
 ]
 
 export const serviceData = [

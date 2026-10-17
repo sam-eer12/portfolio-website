@@ -1,10 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
 import { assets } from '@/assets/assets'
+import ScrollReveal from './ScrollReveal'
 
 const Header = () => {
   return (
-    <div className='w-11/12 max-w-3xl mx-auto text-center h-screen flex flex-col items-center justify-center gap-4 '>
+    <ScrollReveal id='top' className='w-11/12 max-w-3xl mx-auto text-center h-screen flex flex-col items-center justify-center gap-4 '>
       <div>
         <Image draggable="false" src={assets.profile_img} alt = "Profile Image" className='w-32 h-32 rounded-full'/>
         </div>
@@ -16,7 +17,7 @@ const Header = () => {
             <a href="/RESUME.pdf" download={true} className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2'>My Resume <Image draggable="false" src={assets.download_icon} alt = "download icon" className='w-4 '/></a>
         
       </div>
-    </div>
+    </ScrollReveal>
   )
 }
 

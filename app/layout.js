@@ -24,7 +24,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="motion-safe:scroll-smooth">
       <head>
         <meta name="google-site-verification" content="z89_y2w8b2a0dGcpC0S3hy4ObEPHA1A09Ts5T3aHZEU" />
         <link rel="icon" href="./favicon.png" sizes="any" />
@@ -33,6 +33,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${outfit.className} ${ovo.variable} antialiased leading-8 overflow-x-hidden`}
       >
+        <noscript>
+          <style>{`.scroll-reveal { opacity: 1 !important; transform: none !important; }`}</style>
+        </noscript>
         {children}
         <Analytics />
       </body>

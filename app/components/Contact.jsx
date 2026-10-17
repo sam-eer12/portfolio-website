@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import { assets } from '@/assets/assets'
+import ScrollReveal from './ScrollReveal'
 
 const Contact = () => {
     const [result, setResult] = useState("");
@@ -29,9 +30,11 @@ const Contact = () => {
     };
   return (
     <div id='contact' className='w-full px-[12%] py-10 scroll-mt-20 bg-[url("/footer-bg-color.png")] bg-no-repeat bg-center bg-[length:90%_auto]'>
-      <h4 className='text-center mb-2 text-lg font-ovo'>Get in Touch</h4>
-      <h2 className='text-center text-5xl font-ovo'>Contact Me</h2>
-      <form onSubmit={onSubmit} className='max-w-2xl mx-auto'>
+      <ScrollReveal>
+        <h4 className='text-center mb-2 text-lg font-ovo'>Get in Touch</h4>
+        <h2 className='text-center text-5xl font-ovo'>Contact Me</h2>
+      </ScrollReveal>
+      <ScrollReveal as='form' onSubmit={onSubmit} className='max-w-2xl mx-auto'>
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10 mb-8'>
             <input type="text" placeholder='Enter Your Name' required className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white' name='name' />
             <input type="email" placeholder='Enter Your Email' required className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white' name='email' />
@@ -41,7 +44,7 @@ const Contact = () => {
         </div>
         <button type='submit' className='bg-blue-500 w-max flex items-center justify-center mx-auto hover:bg-blue-900 duration-400 text-white py-3 px-8 rounded-full'>Submit  <Image draggable="false" src={assets.right_arrow_white} alt='' className='w-5 pl-[4px]'/></button>
         <p>{result}</p>
-      </form>
+      </ScrollReveal>
     </div>
   )
 }
