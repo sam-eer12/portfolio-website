@@ -7,6 +7,7 @@ import Services from "./components/Services";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import FooterCharacter from "./footer-character";
 export default function Home() {
   return (
     <>
@@ -16,6 +17,7 @@ export default function Home() {
     <Services />
     <Work />
     <Contact />
+    <FooterCharacter />
     <Footer />
     </>
   );

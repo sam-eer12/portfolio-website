@@ -16,6 +16,40 @@
   display: none;
 }
 
+.footer-character {
+  position: relative;
+  width: 65vw;
+  aspect-ratio: 16 / 9;
+  margin: 16px auto 0;
+  isolation: isolate;
+  overflow: hidden;
+  background: #dfe4f2;
+}
+
+.footer-background {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.footer-background video {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 700px) {
+  .footer-character {
+    aspect-ratio: 4 / 3;
+    background: #f0eefa;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
